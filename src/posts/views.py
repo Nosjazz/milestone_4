@@ -1,5 +1,5 @@
 from django.db.models import Count, Q
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post
 from marketing.models import Signup
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -61,7 +61,7 @@ def blog(request):
         'category_count': category_count
 
     }
-    return render( request, 'blog.html', context)
+    return render(request, 'blog.html', context)
 
 def post(request, id):
-    return render( request, 'post.html', {})
+    return render(request, 'post.html', {})
