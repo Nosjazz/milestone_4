@@ -35,6 +35,9 @@
               {% if request.user.is_staff %}
               <li class="nav-item"><a href="{% url 'post-create' %}" class="nav-link ">Create</a>
               </li>
+              {% else %}
+              <li class="nav-item"><a href="/accounts/login" class="nav-link ">Login</a>
+              <li class="nav-item"><a href="/accounts/signup" class="nav-link ">Sign Up</a>
               {% endif %}
             </ul>
             <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
