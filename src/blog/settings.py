@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'tinymce',
 
     'marketing',
-    'posts'
+    'posts',
 ]
 
 LOGIN_REDIRECT_URL = '/'

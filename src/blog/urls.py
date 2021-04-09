@@ -5,7 +5,7 @@ from django.urls import path, include
 
 from posts.views import (
     index, blog, post, search,
-    post_create, post_update, post_delete
+    post_create, post_update, post_delete, contact
 )
 from marketing.views import email_list_signup
 
@@ -20,7 +20,8 @@ urlpatterns = [
     path('post/<id>/update/', post_update, name='post-update'),
     path('post/<id>/delete/', post_delete, name='post-delete'),
     path('tinymce/', include('tinymce.urls')),
-    path('accounts/', include('allauth.urls'))
+    path('accounts/', include('allauth.urls')),
+    path('contact/', contact, name='contact')
 ]
 
 if settings.DEBUG:
