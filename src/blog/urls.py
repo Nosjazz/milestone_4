@@ -21,7 +21,7 @@ urlpatterns = [
     path('post/<id>/delete/', post_delete, name='post-delete'),
     path('tinymce/', include('tinymce.urls')),
     path('accounts/', include('allauth.urls')),
-    path('contact/', contact, name='contact')
+    path('contact/', contact, name='contact'),
 ]
 
 if settings.DEBUG:

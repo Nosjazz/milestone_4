@@ -5,6 +5,7 @@ from .forms import CommentForm, PostForm
 from .models import Post, Author, PostView
 from marketing.forms import EmailSignupForm
 from marketing.models import Signup
+from django.core.mail import send_mail
 
 form = EmailSignupForm()
 
@@ -154,4 +155,17 @@ def post_delete(request, id):
     return redirect(reverse("post-list"))
 
 def contact(request):
-    return render(request, "contact.html")
+    if request.method == "POST":
+        name = request.POST['name']
+        message = request.POST['message']
+        email = request.POST['email']
+
+        # send an email
+        send_mail(
+            name,
+            email,
+            message,
+            ['vandendriessche.n@hotmail.be']
+        )
+    else:
+        return render(request, "contact.html", {})
