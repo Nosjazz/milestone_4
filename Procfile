@@ -1,1 +1,1 @@
-web: gunicorn nosjazz.wsgi:application
+web: gunicorn src.blog.wsgi:application
