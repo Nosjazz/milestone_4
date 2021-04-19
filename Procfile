@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath blog app.wsgi
+web: gunicorn --pythonpath blog blog.wsgi
