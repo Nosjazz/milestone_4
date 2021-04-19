@@ -167,5 +167,6 @@ def contact(request):
             message,
             ['vandendriessche.n@hotmail.be']
         )
+        return render(request, "contact.html", {})
     else:
         return render(request, "contact.html", {})
