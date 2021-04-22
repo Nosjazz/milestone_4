@@ -10,6 +10,10 @@ from django.core.mail import send_mail
 form = EmailSignupForm()
 
 
+def donation (request):
+    return render(request, "donation.html", {})
+
+
 def get_author(user):
     qs = Author.objects.filter(user=user)
     if qs.exists():
