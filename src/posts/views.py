@@ -38,6 +38,8 @@ def donation(request):
 			description="Donation"
 			)
 
+        return render(request, "success.html", {})
+
     return render(request, "donation.html", {})
 
 
