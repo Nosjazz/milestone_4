@@ -5,200 +5,231 @@
 
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inter&display=swap" rel="stylesheet">
 
-	<!-- Landing page styling -->
-	<style type="text/css">
+<!-- Landing page styling -->
+<style type="text/css">
+        /**
+    * The CSS shown here will not be introduced in the Quickstart guide, but shows
+    * how you can use CSS to style your Element's container.
+    */
+    .StripeElement {
+    box-sizing: border-box!important;
 
-		body{
-			background-color: #F8F8F8;
-		}
+    height: 40px!important;
 
-		h3, h5{
-			font-family: 'Fjalla One', sans-serif;
-			font-weight: 100;
-		}
+    padding: 10px 12px!important;
 
-		h3{
-			font-size: 36px;
-		}
+    border: 1px solid transparent!important;
+    border-radius: 4px!important;
+    background-color: white!important;
 
-		h5{
-			font-size: 24px;
-		}
+    box-shadow: 0 1px 3px 0 #e6ebf1!important;
+    -webkit-transition: box-shadow 150ms ease!important;
+    transition: box-shadow 150ms ease!important;
+    }
 
-		p, label{
-			font-family: 'Inter', sans-serif;
-		}
+    .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df!important;
+    }
 
-		hr{
-			color:#fff;
-			background-color: #fff;
-			border-top:1px solid #fff;
-			margin-top:20px;
-			margin-bottom: 20px;
-		}
+    .StripeElement--invalid {
+    border-color: #fa755a!important;
+    }
 
-		#container{
-			width:1200px;
-			margin:0 auto;
-			padding-top: 3%;
-		}
+    .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+    }
 
-		.column-6{
-			width: 50%;
-			float:left;
-		}
+    body{
+        background-color: #F8F8F8;
+    }
 
-		#left-wrapper{
-			background-color: #72cca7;
-			box-shadow: 0 1px 3px 0 #dce0e6;
-		    border-radius: 4px;
-		    border: 1px solid transparent;
-		    padding: 30px;	
-		}
+    h3, h5{
+        font-family: 'Fjalla One', sans-serif;
+        font-weight: 100;
+    }
 
-		#right-wrapper{
-			padding: 30px;
-		}
+    h3{
+        font-size: 36px;
+    }
 
-		#profile-pic{
-			width:200px;
-			display:block;
-			margin: 0 auto;
-			border-radius: 50%;
-			float:left;
+    h5{
+        font-size: 24px;
+    }
 
-		}
+    p, label{
+        font-family: 'Inter', sans-serif;
+    }
 
-		#left-wrapper-header{
-			min-width:50%;
-			float:left;
-			padding-left:20px;
+    hr{
+        color:#fff;
+        background-color: #fff;
+        border-top:1px solid #fff;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
 
-		}
+    #container{
+        width:1200px;
+        margin:0 auto;
+        padding-top: 3%;
+    }
 
-		#left-wrapper-header h3{
-			color:#fff;
+    .column-6{
+        width: 50%;
+        float:left;
+    }
 
-		}
+    #left-wrapper{
+        background-color: #72cca7;
+        box-shadow: 0 1px 3px 0 #dce0e6;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        padding: 30px;	
+    }
 
-		#right-wrapper h3{
-			color: #10a195;
-		}
+    #right-wrapper{
+        padding: 30px;
+    }
 
-		.coffee-cup{
-			margin-left: 20px;
-			width: 100px;
-		}
+    #profile-pic{
+        width:200px;
+        display:block;
+        margin: 0 auto;
+        border-radius: 50%;
+        float:left;
 
-		.coffee-cup2{
-			margin-left: 20px;
-			width: 150px;
-		}
+    }
 
-		.coffee-cup3{
-			margin-left: 20px;
-			width: 200px;
-		}
+    #left-wrapper-header{
+        min-width:50%;
+        float:left;
+        padding-left:20px;
 
-		/* ------------------------ FORM FIELDS ------------------------ */
+    }
 
-		.form-field-12{
-			width: 100%;
-			margin-bottom: 10px;
-			padding-top: 5px;
-		}
+    #left-wrapper-header h3{
+        color:#fff;
 
-		.form-field-6{
-			width: 50%;
-			float:left;
-			margin-bottom: 10px;
-		}
+    }
 
-		select{
-			width: 100%;
-			height: 60px!important;
-			box-shadow: 0 1px 3px 0 #dce0e6;
-		    padding: 10px 12px;
-		    border-radius: 4px;
-		    background-color: #fff;
-		    border: 1px solid transparent;
-		    font-size: 20px;
-		    color:	#44464a;
-		}
+    #right-wrapper h3{
+        color: #10a195;
+    }
 
-		input{
-		    box-shadow: 0 1px 3px 0 #dce0e6;
-		    height:40px;
-		    border-radius: 4px;
-		    background-color: #fff;
-		    border: 1px solid transparent;
-		    color:	#44464a;
-		    width: 95%;
-		    padding: 5px;
-		    font-size: 16px;
+    #card-element {
+        width: 100%;
+    }
 
-		}
+    .coffee-cup{
+        margin-left: 20px;
+        width: 100px;
+    }
 
-		input::placeholder {
-		  color: #9fa1a6;
-		}
+    .coffee-cup2{
+        margin-left: 20px;
+        width: 150px;
+    }
 
-		/* ------------------------ BUTTON STYLING ------------------------ */
-		.myButton {
-			background-color:#72cca7;
-			display:inline-block;
-			cursor:pointer;
-			color:#ffffff;
-			font-family:Verdana;
-			font-size:17px;
-			padding:10px;
-			width:100%;
-			border-radius: 0;
-			text-decoration:none;
-			text-align: center;
-			transition: .3s;
-		}
-		.myButton:hover {
-			opacity: .6;
-		}
+    .coffee-cup3{
+        margin-left: 20px;
+        width: 200px;
+    }
 
-		@media screen and (max-width:1200px){
-			#container{
-				width:80%;
-			}
+    /* ------------------------ FORM FIELDS ------------------------ */
 
-			.column-6{
-				width: 100%;
-			}
-		}
+    .form-field-12{
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 5px;
+    }
 
-		@media screen and (max-width:800px){
-			#container{
-				width:100%;
-			}
+    .form-field-6{
+        width: 50%;
+        float:left;
+        margin-bottom: 10px;
+    }
 
-			.coffee-cup{
-				margin-left: 20px;
-				width: 50px;
-			}
+    select{
+        width: 100%;
+        height: 60px!important;
+        box-shadow: 0 1px 3px 0 #dce0e6;
+        padding: 10px 12px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        font-size: 20px;
+        color:	#44464a;
+    }
 
-			.coffee-cup2{
-				margin-left: 20px;
-				width: 75px;
-			}
+    input{
+        box-shadow: 0 1px 3px 0 #dce0e6;
+        height:40px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        color:	#44464a;
+        width: 95%;
+        padding: 5px;
+        font-size: 16px;
 
-			.coffee-cup3{
-				margin-left: 20px;
-				width: 100px;
-			}
+    }
 
-		}
-	</style>
+    input::placeholder {
+        color: #9fa1a6;
+    }
 
+    /* ------------------------ BUTTON STYLING ------------------------ */
+    .myButton {
+        background-color:#72cca7;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Verdana;
+        font-size:17px;
+        padding:10px;
+        width:100%;
+        border-radius: 0;
+        text-decoration:none;
+        text-align: center;
+        transition: .3s;
+    }
+    .myButton:hover {
+        opacity: .6;
+    }
 
-	<script src="https://js.stripe.com/v3/"></script>
+    @media screen and (max-width:1200px){
+        #container{
+            width:80%;
+        }
 
+        .column-6{
+            width: 100%;
+        }
+    }
 
+    @media screen and (max-width:800px){
+        #container{
+            width:100%;
+        }
+
+        .coffee-cup{
+            margin-left: 20px;
+            width: 50px;
+        }
+
+        .coffee-cup2{
+            margin-left: 20px;
+            width: 75px;
+        }
+
+        .coffee-cup3{
+            margin-left: 20px;
+            width: 100px;
+        }
+
+    }
+</style>
+<script src="https://js.stripe.com/v3/"></script>
 <section>
     <div class="container">
         <div class="column-6">
@@ -223,15 +254,12 @@
                             <option value="25">$25 --- I love your channel!</option>
                         </select>
                     </div>
-
                     <div class="form-field-6">
                         <input required type="text" name="email" placeholder="email...">
                     </div>
-
                     <div class="form-field-6">
                         <input required type="text" name="nickname" placeholder="Nickname...">
                     </div>
-
                     <div class="form-row">
                     <label for="card-element">
                         Credit or debit card
@@ -239,32 +267,25 @@
                     <div id="card-element">
                         <!-- A Stripe Element will be inserted here. -->
                     </div>
-
                     <!-- Used to display form errors. -->
                     <div id="card-errors" role="alert"></div>
-                    </div>
-                    
+                    </div>                   
                     <div style="clear:left"></div>
                     <hr>
-
                     <input  class="myButton" style="background-color:#10a195" type="submit" value="Submit Payment" name="">
-
-                </form>
-
-            
+                </form>         
             </div>
-
-                <div class="column-6">
-                    <div id="right-wrapper">
-
-                        <img class="coffee-cup" src="{% static 'img/Coffee5.png' %}">
-                        <img class="coffee-cup2" src="{% static 'img/Coffee10.png' %}">
-                        <img class="coffee-cup3" src="{% static 'img/Coffee25.png' %}">
-                        <h3>If you like our content, please consider supporting our efforts ;)</h3>
-                        <hr>
-                    </div>
+        </div>
+            <div class="column-6">
+                <div id="right-wrapper">
+                    <img class="coffee-cup" src="{% static 'img/Coffee5.png' %}">
+                    <img class="coffee-cup2" src="{% static 'img/Coffee10.png' %}">
+                    <img class="coffee-cup3" src="{% static 'img/Coffee25.png' %}">
+                    <h3>If you like our content, please consider supporting our efforts ;)</h3>
+                    <hr>
                 </div>
-	</div>
+            </div>
+        </div>
 </section>
 
 
