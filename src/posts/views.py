@@ -12,13 +12,16 @@ from django.http import JsonResponse
 import os
 import stripe 
 stripe.api_key = os.environ.get('STRIPE_SECRET_KEY', '')
-
 form = EmailSignupForm()
 
 def success(request):
 	return render(request, 'success.html', {})
 
 def donation(request):
+    context = {
+        'stripe.public_key' : 'pk_test_51IjAMVFdPmLzJCAhEBRkY8E4LIJtKWhJaC4X3tb4MQQPFv0FW2MtG4g5vdYcZRhM76mF6egk4Qw5Vy2eDMhQbJuz00QALAMD3i',
+        'STRIPE_SECRET_KEY' : 'test client server'
+    }
     if request.method == 'POST':
         amount = int(request.POST['amount'])
 
