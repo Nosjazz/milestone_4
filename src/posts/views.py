@@ -7,6 +7,9 @@ from marketing.forms import EmailSignupForm
 from marketing.models import Signup
 from django.core.mail import send_mail
 
+import stripe 
+stripe.api_key = "pk_test_51IjAMVFdPmLzJCAhEBRkY8E4LIJtKWhJaC4X3tb4MQQPFv0FW2MtG4g5vdYcZRhM76mF6egk4Qw5Vy2eDMhQbJuz00QALAMD3i"
+
 form = EmailSignupForm()
 
 def success(request):
