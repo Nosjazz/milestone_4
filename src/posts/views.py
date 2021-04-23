@@ -10,7 +10,7 @@ from django.core.mail import send_mail
 form = EmailSignupForm()
 
 
-def donation (request):
+def donation(request):
     return render(request, "donation.html", {})
 
 
