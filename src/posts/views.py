@@ -9,6 +9,8 @@ from django.core.mail import send_mail
 
 form = EmailSignupForm()
 
+def success(request):
+	return render(request, 'success.html', {})
 
 def donation(request):
     return render(request, "donation.html", {})
