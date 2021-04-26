@@ -38,7 +38,7 @@
                 <header class="post-header">
                   <div class="category">
                     {% for cat in obj.categories.all %}
-                    <a href="#">{{ cat }}</a>
+                    {{ cat }}
                     {% endfor %}
                   </div>
                   <a href="{{ obj.get_absolute_url }}">
@@ -86,11 +86,11 @@
             <div class="post-details">
               <div class="post-meta d-flex justify-content-between">
                 <div class="date">{{ obj.timestamp }}</div>
-                <div class="category">
+                <!--<div class="category">
                   {% for cat in obj.categories.all %}
                   <a href="#">{{ cat }}</a>
                   {% endfor %}
-                  </div>
+                  </div>-->
               </div><a href="{{ obj.get_absolute_url }}">
                 <h3 class="h4">{{ obj.title }}</h3></a>
               <p class="text-muted">{{ obj.overview|linebreaks|truncatechars:200 }}</p>

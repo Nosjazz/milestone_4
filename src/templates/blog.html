@@ -16,10 +16,10 @@
                 <div class="post-details">
                   <div class="post-meta d-flex justify-content-between">
                     {% comment %} <div class="date meta-last">20 May | 2016</div> {% endcomment %}
-                    <div class="category">
+                   <div class="category">
                     {% for cat in post.categories.all %}
-                    <a href="#">{{ cat }}</a>
-                    {% endfor %}
+                    {{ cat }}
+                    {% endfor %} 
                     </div>
                   </div><a href="{{ post.get_absolute_url }}">
                     <h3 class="h4">{{ post.title }}</h3></a>
