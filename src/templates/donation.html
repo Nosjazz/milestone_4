@@ -4,13 +4,9 @@
 {% block content %}
 
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inter&display=swap" rel="stylesheet">
+<script src="https://js.stripe.com/v3/"></script>
+<style>
 
-<!-- Landing page styling -->
-<style type="text/css">
-        /**
-    * The CSS shown here will not be introduced in the Quickstart guide, but shows
-    * how you can use CSS to style your Element's container.
-    */
     .StripeElement {
     box-sizing: border-box!important;
 
@@ -135,101 +131,8 @@
         width: 200px;
     }
 
-    /* ------------------------ FORM FIELDS ------------------------ */
-
-    .form-field-12{
-        width: 100%;
-        margin-bottom: 10px;
-        padding-top: 5px;
-    }
-
-    .form-field-6{
-        width: 50%;
-        float:left;
-        margin-bottom: 10px;
-    }
-
-    select{
-        width: 100%;
-        height: 60px!important;
-        box-shadow: 0 1px 3px 0 #dce0e6;
-        padding: 10px 12px;
-        border-radius: 4px;
-        background-color: #fff;
-        border: 1px solid transparent;
-        font-size: 20px;
-        color:	#44464a;
-    }
-
-    input{
-        box-shadow: 0 1px 3px 0 #dce0e6;
-        height:40px;
-        border-radius: 4px;
-        background-color: #fff;
-        border: 1px solid transparent;
-        color:	#44464a;
-        width: 95%;
-        padding: 5px;
-        font-size: 16px;
-
-    }
-
-    input::placeholder {
-        color: #9fa1a6;
-    }
-
-    /* ------------------------ BUTTON STYLING ------------------------ */
-    .myButton {
-        background-color:#72cca7;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-        font-family:Verdana;
-        font-size:17px;
-        padding:10px;
-        width:100%;
-        border-radius: 0;
-        text-decoration:none;
-        text-align: center;
-        transition: .3s;
-    }
-    .myButton:hover {
-        opacity: .6;
-    }
-
-    @media screen and (max-width:1200px){
-        #container{
-            width:80%;
-        }
-
-        .column-6{
-            width: 100%;
-        }
-    }
-
-    @media screen and (max-width:800px){
-        #container{
-            width:100%;
-        }
-
-        .coffee-cup{
-            margin-left: 20px;
-            width: 50px;
-        }
-
-        .coffee-cup2{
-            margin-left: 20px;
-            width: 75px;
-        }
-
-        .coffee-cup3{
-            margin-left: 20px;
-            width: 100px;
-        }
-
-    }
 </style>
-<script src="https://js.stripe.com/v3/"></script>
+
 <section>
     <div class="container">
         <div class="column-6">
@@ -288,11 +191,7 @@
         </div>
 </section>
 
-
-
-
-
-	<script>
+<script>
 		// Create a Stripe client.
 		var stripe = Stripe('pk_test_51IjAMVFdPmLzJCAhEBRkY8E4LIJtKWhJaC4X3tb4MQQPFv0FW2MtG4g5vdYcZRhM76mF6egk4Qw5Vy2eDMhQbJuz00QALAMD3i');
 
@@ -364,5 +263,7 @@
 		  form.submit();
 		}
 	</script>
+
+	
 
 {% endblock content %}

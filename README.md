@@ -146,13 +146,16 @@ The CSS, JavaScript and Python Validator Services were used to validate every pa
 
 ### Further Testing
 
+Please log in with the below credential to be able to test all CRUD functionalities:
+login: admin2
+password: admin2
+
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   A large amount of testing was done to ensure that all functions and links were working correctly.
-        -   All elements of the navbar are working from all templates
+        -   All elements of the navbar are working from all templates: Clicking on the logo, home, blog, login, signup, logout, create article, donate and search function on all said devices and browsers.
         -   The logo redirect to the home page
-        -   The Show interest redirect to regitser if not logged in, and to add review when logged in
-        -   The register and login functions work as appropriate and return to the profile page
+        -   The signup and login functions work as appropriate and return to the profile page
         -   Adding and Editing for admin users review works as intended
         -   Validating the donation form sent correspondant payment to Stripe
         -   The contact us is sending an email to the desired email address
