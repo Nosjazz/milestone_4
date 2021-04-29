@@ -42,8 +42,11 @@ This website has been created in order to complete the 4th milestone project of 
 ## Features
 
 -   Responsive on all device sizes
-<h2 align="center"><img src="./static/images/readme/responsivedesktop.PNG">Desktop</h2>
-<h2 align="center"><img src="./static/images/readme/responsivemobile.PNG">Mobile</h2>
+<h2 align="center"><img src="/readme_pictures/home_responsive_desktop.PNG">Desktop - home</h2>
+<h2 align="center"><img src="/readme_pictures/blog_responsive_desktop.PNG">Desktop - blog</h2>
+
+<h2 align="center"><img src="/readme_pictures/home_responsive_mobile.PNG">Mobile - home</h2>
+<h2 align="center"><img src="/readme_pictures/blog_responsive_mobile.PNG">Mobile - blog</h2>
 
 -   Profile Creation
 <h2 align="center"><img src="./static/images/readme/register.PNG"></h2>
@@ -126,10 +129,9 @@ The CSS, JavaScript and Python Validator Services were used to validate every pa
         -   All elements of the navbar are working from all templates
         -   The logo redirect to the home page
         -   The Show interest redirect to regitser if not logged in, and to add review when logged in
-        -   The Read More button on the home page redirect to its appropriate pages (About, Contact Us, Reviews)
         -   The register and login functions work as appropriate and return to the profile page
-        -   Adding and Editing review works as intended
-        
+        -   Adding and Editing for admin users review works as intended
+        -   Validating the donation form sent correspondant payment to Stripe
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
