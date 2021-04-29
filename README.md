@@ -45,12 +45,12 @@ This website has been created in order to complete the 4th milestone project of 
 <h2 align="center"><img src="/readme_pictures/home_responsive_desktop.PNG">Desktop - home</h2>
 <h2 align="center"><img src="/readme_pictures/blog_responsive_desktop.PNG">Desktop - blog</h2>
 
-<h2 align="center"><img src="/readme_pictures/home_responsive_mobile.PNG">Mobile - home</h2>
-<h2 align="center"><img src="/readme_pictures/blog_responsive_mobile.PNG">Mobile - blog</h2>
+<h2 align="center"><img src="/readme_pictures/home_responsive_phone.PNG">Mobile - home</h2>
+<h2 align="center"><img src="/readme_pictures/blog_responsive_phone.PNG">Mobile - blog</h2>
 
 -   Profile Creation
 <h2 align="center"><img src="/readme_pictures/signup.PNG">Sign up</h2>
-<h2 align="center"><img src="/readme_pictures/login.PNG">Log in/h2>
+<h2 align="center"><img src="/readme_pictures/login.PNG">Log in</h2>
 
 -   Nav bar update if logged off, logged in as user or logged in as superuser
 <h2 align="center"><img src="/readme_pictures/navbar_no.PNG">Logged off</h2>
@@ -61,9 +61,6 @@ This website has been created in order to complete the 4th milestone project of 
 <h2 align="center"><img src="/readme_pictures/create_article.PNG">Create article - main view</h2>
 <h2 align="center"><img src="/readme_pictures/update_delete_article_super.PNG">Update article - blog view</h2>
 <h2 align="center"><img src="/readme_pictures/update_article_super.PNG">Update article - main from blog view</h2>
-
--   Review editing when Review-userID matches the userID of logged session
-<h2 align="center"><img src="./static/images/readme/reviewedit.PNG"></h2>
 
 -   Contact us page
 <h2 align="center"><img src="/readme_pictures/contactUs.PNG"> Contact us</h2>
@@ -140,8 +137,10 @@ The CSS, JavaScript and Python Validator Services were used to validate every pa
 #### Returning Visitor Goals
 1. As a Returning Visitor, I want to find back the information I entered
     Every comment added are saved, thanks to Postgres database.
+
 2. As a Returning Visitor, I want to be able to support the blog owner.
     Engaged vistors have to option to Donate through the donate page. However, for marketing purpose, this page is also available for non logged in visitors.
+
 3. As a Returning Visitor, I want to be able to contact the blog owner.
     The contact us page is only available for logged in users, to ensure messages will come from authenticated users who have shown an interest to the blog.
 
@@ -403,6 +402,12 @@ Click Save changes.
 
 ### Acknowledgements
 
+-   [Boostrapious](https://bootstrapious.com/p/bootstrap-blog) for the frontend blog template
+
+-   [JustDjango](https://www.youtube.com/watch?v=HWg3zXWwre8) Channel for the Django tutorial
+
+-   [Denis Ivy](https://www.youtube.com/watch?v=oZwyA9lUwRk) Youtube video for the Stripe donation tutorial
+
 -   My Mentor for his continuous helpful feedback.
 
--   Tutor support at Code Institute for their support.
+-   Tutor support at Code Institute for their support - especially Michael. 
