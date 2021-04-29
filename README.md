@@ -15,7 +15,7 @@ This website has been created in order to complete the 4th milestone project of 
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the project.
         2. As a First Time Visitor, I want to see the most important and recent posts.
-        3. As a First Time Visitor, I wnt to be able to create a user. 
+        3. As a First Time Visitor, I want to be able to create a user. 
         4. As a First Time Visitor, I want to be able to see comments from other visitors.
 
     -   #### Returning Visitor Goals
@@ -49,16 +49,30 @@ This website has been created in order to complete the 4th milestone project of 
 <h2 align="center"><img src="/readme_pictures/blog_responsive_mobile.PNG">Mobile - blog</h2>
 
 -   Profile Creation
-<h2 align="center"><img src="./static/images/readme/register.PNG"></h2>
+<h2 align="center"><img src="/readme_pictures/signup.PNG">Sign up</h2>
+<h2 align="center"><img src="/readme_pictures/login.PNG">Log in/h2>
 
--   Review Creation
-<h2 align="center"><img src="./static/images/readme/reviewadd.PNG"></h2>
+-   Nav bar update if logged off, logged in as user or logged in as superuser
+<h2 align="center"><img src="/readme_pictures/navbar_no.PNG">Logged off</h2>
+<h2 align="center"><img src="/readme_pictures/navbar_normal.PNG">User</h2>
+<h2 align="center"><img src="/readme_pictures/navbar_super.PNG">Super user</h2>
+
+-   Create/update articles when logged in as superuser
+<h2 align="center"><img src="/readme_pictures/create_article.PNG">Create article - main view</h2>
+<h2 align="center"><img src="/readme_pictures/update_delete_article_super.PNG">Update article - blog view</h2>
+<h2 align="center"><img src="/readme_pictures/update_article_super.PNG">Update article - main from blog view</h2>
 
 -   Review editing when Review-userID matches the userID of logged session
 <h2 align="center"><img src="./static/images/readme/reviewedit.PNG"></h2>
 
 -   Contact us page
-<h2 align="center"><img src="./static/images/readme/contact.PNG"></h2>
+<h2 align="center"><img src="/readme_pictures/contactUs.PNG"> Contact us</h2>
+
+-   Donate page
+<h2 align="center"><img src="/readme_pictures/donate.PNG"> Donate </h2>
+
+-   Main Search function
+<h2 align="center"><img src="/readme_pictures/main_search.PNG"> Main search </h2>
 
 ## Technologies Used
 
@@ -111,15 +125,25 @@ The CSS, JavaScript and Python Validator Services were used to validate every pa
 ### Testing User Stories from User Experience (UX) Section
 
 #### First Time Visitor Goals
-1. As a First Time Visitor, I want to easily understand the main purpose of the project, leave if review and have the option to contact the website owner directly.
-    Upon entering the website, the visitor have an extract of the about page, presentation of the team and 2 reviews among the existing reviews, the "show interest" button also encourage the visitor to take action, redirecting to the register page if not logged in, or directly to the add review page when logged in.
+1. As a First Time Visitor, I want to easily understand the main purpose of the project.
+    Upon entering the website, the visitor have a short about the blog section, explaining the purpose and reason for the blog. Few featured articles and most recent ones follow.
 
-2. As a First Time Visitor, I want to be able to see reviews from other visitors.
-    There are an extract of reviews in the home page, as well as en entire page didicated to the reviews accessible from the navbar, or Readmore from the home page.
+2. As a First Time Visitor, I want to see the most important and recent posts.
+    In the homepage, the visitor can see features articles deemed the most important/trendy by the author as well as a section below for the most recent.
+
+3. As a First Time Visitor, I want to be able to create a user. |
+    The navbar is tailored to ensure visitor are provided with the right information depending on if there are logged in, ensuring the Signup function is available.
+
+4. As a First Time Visitor, I want to be able to see comments from other visitors and add comments myself.
+    The blog post view offer user to add comment only when there are logged in, and request them to sign up if not.
 
 #### Returning Visitor Goals
 1. As a Returning Visitor, I want to find back the information I entered
-    Thanks to the login functionality, the returning visitor is able to find back all the information entered into the profile section, but is also able to edit his reviews.
+    Every comment added are saved, thanks to Postgres database.
+2. As a Returning Visitor, I want to be able to support the blog owner.
+    Engaged vistors have to option to Donate through the donate page. However, for marketing purpose, this page is also available for non logged in visitors.
+3. As a Returning Visitor, I want to be able to contact the blog owner.
+    The contact us page is only available for logged in users, to ensure messages will come from authenticated users who have shown an interest to the blog.
 
 ### Further Testing
 
@@ -132,13 +156,20 @@ The CSS, JavaScript and Python Validator Services were used to validate every pa
         -   The register and login functions work as appropriate and return to the profile page
         -   Adding and Editing for admin users review works as intended
         -   Validating the donation form sent correspondant payment to Stripe
+        -   The contact us is sending an email to the desired email address
+        -   The articles can be added and deleted only when logged in as super user
+        -   The most recent section on the home page is only showing the 3 most recent posts
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
-- There is a slight space between the logo and the banner / above the "Show interest" and the banner on several resolutions
+- There is no known bugs
 
-- For mobile view, the banner logo is not clear
+### Further improvements
+
+-   Ensuring a 404 message is tailored
+-   Having a message confirming the Contact Us form worked properly
+-   Adding a page filtered by category
 
 ## Deployment
 
